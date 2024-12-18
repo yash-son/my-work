@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS padding</title>
+    <link rel="stylesheet" href="../css/css_padding.css">
+</head>
+
+<body>
+    <div class="cl1">
+        <h2>Css padding:</h2>
+        <p>Padding is used to create space around an element's content, inside of any defined borders.
+
+        </p>
+        <p>We can set individual padding for each side of the element</p>
+        <ul>
+            <li>padding-top</li>
+            <li>paddinf-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+        <p>All the padding properties can have the following values:</p>
+        <br>
+        <ul>
+            <li><strong>length: </strong>specifies a padding in px, pt, cm, etc.</li>
+            <li><strong>%: </strong>specifies a padding in % of the width of the containing element</li>
+            <li><strong>inherit:</strong>specifies that the padding should be inherited from the parent element</li>
+        </ul>
+        <p>Example:</p>
+        <p id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique corporis delectus praesentium
+            perferendis sequi aspernatur beatae voluptates! Quis ipsa quam quaerat consequatur deleniti voluptas
+            perspiciatis ducimus fugit delectus, laudantium molestias non minima perferendis vel tempora repellendus
+            dicta voluptatibus? Similique quaerat odio explicabo, quo velit repellat modi possimus ea aut debitis beatae
+            eum maxime quibusdam perferendis laborum sed, dolor rerum voluptatum neque quod nostrum atque optio. Quas
+            maiores inventore cum cupiditate, necessitatibus sunt! Commodi, sequi ipsum soluta iure, modi earum fugiat
+            voluptatem mollitia dolore sit autem, explicabo molestias quae? Sapiente, id? Nobis exercitationem magni
+            natus provident ad animi error, repellat magnam? </p>
+    </div>
+    <div class="cl2">
+        <h2>Padding shorthand property</h2>
+        <p>If the padding property has four values:</p>
+        <ul>
+            <li>padding: 25px 50px 75px 100px;
+                <ul style="list-style-type: circle;">
+                    <li>top padding is 25px</li>
+                    <li>right padding is 50px</li>
+                    <li>bottom padding is 75px</li>
+                    <li>left padding is 100px</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Example:</p>
+        <p id="id2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minima alias iste quasi minus
+            sed consectetur architecto, fugit deserunt nihil.</p>
+        <p>If the padding property has two values:</p>
+        <ul>
+            <li>padding: 25px 50px 75px;
+                <ul style="list-style-type: circle;">
+                    <li>top padding is 25px</li>
+                    <li>right and left paddings are 50px
+                    </li>
+                    <li>bottom padding is 75px
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Example:</p>
+        <p id="id3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aperiam ipsam. Blanditiis
+            adipisci possimus ut numquam molestiae architecto maiores assumenda doloremque quaerat consectetur
+            consequatur explicabo libero, id eos aspernatur molestias, perspiciatis praesentium totam aut est unde
+            incidunt quis tempore veniam. Natus maiores harum, recusandae tempora esse non aut alias sequi tenetur!
+            Magni dolore iure maiores in perspiciatis fuga vel rem commodi, accusamus optio blanditiis et itaque?
+            Exercitationem, laboriosam. Eum ullam qui magni illo odio, reprehenderit, consequuntur sed alias
+            necessitatibus, atque libero ipsa quisquam perspiciatis eaque optio. Ipsam, earum ea repellat veniam optio
+            obcaecati iusto laborum pariatur! Maxime incidunt placeat doloremque?</p>
+        <p>If the padding property has two values:</p>
+        <ul>
+            <li>padding: 25px 50px;
+                <ul style="list-style-type: circle;">
+                    <li>top and bottom paddings are 25px</li>
+                    <li>right and left paddings are 50px</li>
+                </ul>
+            </li>
+        </ul>
+        <p>example:</p>
+        <p id="id4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nam nobis temporibus repellat autem pariatur dolorum. Aut rem asperiores, illo ipsam quis in repudiandae animi sint temporibus eveniet neque quod sed eaque inventore nisi esse sapiente vel assumenda ad, atque voluptate odit fuga. Modi quibusdam hic quia facere amet sint.</p>
+        <p>If the padding have one value.</p>
+        <ul>
+            <li>padding: 25px;
+                <ul>
+                    <li>all four paddings are 25px</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Example:</p>
+        <p id="id5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos, dolorum eum recusandae optio dolorem quis architecto repellat perferendis a!</p>
+        
+    </div>
+    <div class="cl3">
+        <h2>Padding and element width</h2>
+        <p>if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+        <p>Generally,the CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p>
+        <p>To include padding in a width we should box-sizing:border-box; property</p>
+        <p>example without border-box:</p>
+        <p id="id6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis magnam sunt aperiam porro, dolorum eum deleniti! Autem dicta tempore atque!</p>
+        <p>Example with border-box</p>
+        <p id="id7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, nihil! Nisi illum provident placeat magnam nobis! Harum quod et reprehenderit.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.cl1 #id1{
+    /* padding: 10px 10% 10px 10%; */
+    border: 1px solid black;
+    /* or */
+    padding-top: 10px;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-left: 10%;
+}
+.cl2 #id2{
+    padding: 10px 10% 10px 10%;
+    border: 1px solid black;
+}
+.cl2 #id3{
+    padding: 10px 10% 10px;
+    border: 1px solid black;
+}
+.cl2 #id4{
+    padding: 10px 10%;
+    border: 1px solid black;
+}
+.cl2 #id5{
+    padding: 5px;
+    border: 1px solid black;
+}
+.cl3 #id6{
+    width: 300px;
+    padding: 20px;
+    /* actual width will be 300 + 20+20 */
+    border: 1px solid black;
+}
+.cl3 #id7{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid black;
+    /* actual width is also 300px */
+    /* In border-box width=content width +padding +border width */
+}

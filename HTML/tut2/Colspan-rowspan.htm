@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and rowspan.</title>
+    <style>
+        .cl1 table,
+        .cl1 td,
+        .cl1 th {
+            border: 1px solid black;
+        }
+
+        .cl1 table {
+            border-collapse: collapse;
+        }
+
+        .cl1 th,
+        .cl1 td {
+            padding: 4px 6px;
+        }
+
+        .cl2 th,
+        .cl2 td {
+            padding: 4px 6px;
+        }
+
+        .cl2 tr:nth-child(even) {
+            background-color: rgba(0, 149, 255, 0.19);
+        }
+
+        .cl2 table {
+            border-spacing: 1px;
+        }
+
+        .cl3 th,
+        .cl3 td {
+            padding: 4px 6px;
+        }
+
+        .cl3 border {
+            border-spacing: 1px;
+        }
+
+        .cl3 td:nth-child(even),
+        .cl3 th:nth-child(even) {
+            background-color: rgba(0, 42, 255, 0.093);
+        }
+
+        .cl4 th,
+        .cl4 td {
+            padding: 4px 6px;
+        }
+
+        .cl4 table {
+            border-spacing: 1px;
+        }
+
+        .cl4 tr:nth-child(even) {
+            background-color: rgba(137, 43, 226, 0.28);
+        }
+
+        .cl4 td:nth-child(even),
+        .cl4 th:nth-child(even) {
+            background-color: rgba(137, 43, 226, 0.28);
+        }
+
+        .cl5 th,
+        .cl5 td {
+            padding: 4px 6px;
+        }
+
+        .cl5 table {
+            border-spacing: 0px;
+        }
+
+        .cl5 td,
+        .cl5 th {
+            border-bottom: 1px solid black;
+            /* Border an't be applied to tr */
+        }
+
+        .cl6 th,
+        .cl6 td {
+            padding: 4px 6px;
+        }
+
+        .cl6 table {
+            border-spacing: 0px;
+        }
+
+        .cl6 td,
+        .cl6 th {
+            border-bottom: 1px solid black;
+            /* Border an't be applied to tr */
+        }
+
+        .cl6 tr:hover {
+            background-color: rgba(255, 0, 0, 0.268);
+        }
+
+        .cl7 table,
+        .cl7 td,
+        .cl7 th {
+            border: 1px solid black;
+        }
+
+        .cl7 table {
+            border-collapse: collapse;
+        }
+
+        .cl7 td,
+        .cl7 th {
+            padding: 4px 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cl1">
+        <h2>HtMl colspan</h2>
+        <p>to span the html cell over the multiple coloumns we use the colspan property.</p>
+        <!-- Example -->
+        <table>
+            <caption
+                style="font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;font-weight: bold;">
+                Colspan</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>Yash</td>
+                <td>Soni</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Chirag</td>
+                <td>Sharma</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>Muniya</td>
+                <td>21</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl1">
+        <h2>Rowspan</h2>
+        <p>we can make the cell span over multiple rows using the rowspan property.
+        <table>
+            <caption
+                style="font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: oblique;font-weight: bold;">
+                Rowspan</caption>
+            <tr>
+                <th>Name</th>
+                <td>Yash soni</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone-no.</th>
+                <td>7224063246</td>
+            </tr>
+            <tr>
+                <td>9753968966</td>
+            </tr>
+        </table>
+        </p>
+    </div>
+    <div>
+        <h1>HTML table styling.</h1>
+        <div class="cl2">
+            <h2>zebra style: </h2>
+            <table>
+                <caption style="font-size: 10px;">Zebra styling</caption>
+                <tr>
+                    <th>Employee_id</th>
+                    <th>Employee_name</th>
+                    <th>Employee_age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Yash</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shubh</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Aniket</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cl3">
+            <h2>vertial zebra strip style:</h2>
+            <table>
+                <caption style="font-size: 10px;">Vertical Zebra styling</caption>
+                <tr>
+                    <th>Employee_id</th>
+                    <th>Employee_name</th>
+                    <th>Employee_age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Yash</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shubh</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Aniket</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="cl4">
+        <h2>combing vertical nd horizontal zebra stripes</h2>
+        <table>
+            <caption style="font-size: 10px;">Vertical+Horizontal Zebra styling</caption>
+            <tr>
+                <th>Employee_id</th>
+                <th>Employee_name</th>
+                <th>Employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniket</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="cl5">
+        <h2>Horizontal divider styling</h2>
+        <table>
+            <caption style="font-size: 10px;">Horizontal divider styling</caption>
+            <tr>
+                <th>Employee_id</th>
+                <th>Employee_name</th>
+                <th>Employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniket</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl6">
+        <h1>Hoverable table</h1>
+        <table>
+            <caption style="font-size: 10px;">Horizontal divider styling</caption>
+            <tr>
+                <th>Employee_id</th>
+                <th>Employee_name</th>
+                <th>Employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniket</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl7" id="colgroup">
+        <h2>Colgroup tag,col tag and span attribute</h2>
+        <p>Cogroup specifies the container for styling the coloumns.</p>
+        <p>Each group inside the colgroup is specified using the col tag.</p>
+        <p>span is used to set the span od that group.</p>
+        <table>
+            <caption style="font-size: 10px;">Colgroup</caption>
+            <colgroup>
+                <col span="2" style="background-color: rgba(238, 130, 238, 0.172);">
+            </colgroup>
+            <tr>
+                <th>Employee_id</th>
+                <th>Employee_name</th>
+                <th>Employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniket</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <p>colgroup elemnt must be the child of the table element and must be
+            placed abve any other table element except the caption elment.
+        </p>
+        <p>There are only few css property that are allowed to be used inside the colgroup elemnet. <br>
+            those are :
+            1: width <br>
+            2:visibility <br>
+            3:background <br>
+            4:border <br>
+        </p>
+    </div>
+    <div class="cl7">
+        <h2>Multiple col elements</h2>
+        <p>if we want to style more than two set of coloums we can use multiple col elements inside the colgroup.</p>
+        <table>
+            <caption style="font-size: 10px;">Colgroup</caption>
+            <colgroup>
+                <col span="2" style="background-color: rgba(238, 130, 238, 0.172);">
+                <col span="2" style="background-color: rgba(255, 228, 196, 0.339);">
+            </colgroup>
+            <tr>
+                <th>Employee_id</th>
+                <th>Employee_name</th>
+                <th>Employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniket</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shrajal</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl7">
+        <h2>Empty col elements,and hide coloumns</h2>
+        <p>if we want to style the elments in the middle of the table we need to inser the empty col element for that.
+        </p>
+        <p>We can hide the coloumn using the visibility:collapse;/p>
+        <table>
+            <caption style="font-size: 10px;">Colgroup</caption>
+            <colgroup>
+                <col span="1">
+                <col span="1" style="background-color: rgba(126, 173, 80, 0.222);">
+                <col span="1" style="visibility: collapse;">
+            </colgroup>
+            <tr>
+                <th>Employee_id</th>
+                <th>Employee_name</th>
+                <th>Employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniket</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shrajal</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

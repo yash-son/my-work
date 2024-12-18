@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia</title>
+</head>
+
+<body>
+    <div>
+        <h2>HTML multimedia</h2>
+        <p>multimedia on the web is sound,music,videos,movies, and animations.</p>
+        <p>Note: only mp4,WebM, and Ogg video formats are supported by HTML.</p>
+        <p>Only mp3 ,WAV, and ogg audio formats are supprorted by hymt.</p>
+    </div>
+    <div>
+        <h2>HTML video</h2>
+        <p>HTMl video element is used to display video in web pages.</p>
+        <p>control attribute is used to add controls to the video.</p>
+        <video style="width: 400px;height: 700px;" controls>
+            <source src="video/videoplayback.mp4" type="video/mp4">
+            this video is regarding a one piece edit.
+        </video>
+        <p>The text inside the video will be displayed when video will not be displayed due to some error.</p>
+        <div>
+            <h2>HtMl video autoplay attribute</h2>
+            <p>It is used to add autoplay feature to our video.</p>
+            <p>In chrome autoplay is not allowed but muted autoplay is allowed ,for that add muted keyword after the
+                autolay keyword.</p>
+            <video style="width: 400px;height: 700px;border: 1px solid black;" controls autoplay muted>
+                <source src="video/videoplayback.mp4" type="video/mp4">>
+            </video>
+        </div>
+        <div>
+            <h2>the HTML audio</h2>
+            <p>The html audio element is used to insert audio in web page.</p>
+            <p>The text inside the audio element will be displayed when audio will not work.</p>
+            <p>Example:</p>
+            <audio controls autoplay muted>
+                <source src="audio/binks-sake-one-piece-piano-tutorial-shorts-128-ytshorts.savetube.me.mp3"
+                    type="audio/mp3">
+                Binks Booze
+            </audio>
+        </div>
+        <div>
+            <h2>HtML plus ins</h2>
+            <p>Plug-ins are computer programs that extend the standard functionality of the browser.</p>
+            <p>Plug-ins were designed to be used for many different purposes:</p>
+            <ul>
+                <li>To run Java applets</li>
+                <li>To run Microsoft ActiveX controls/li>
+                <li>To display Flash movies</li>
+                <li>To display maps</li>
+                <li>To verify a bank id</li>
+            </ul>
+            <p><strong>Warning !</strong> <br>
+                Most browsers no longer support Java Applets and Plug-ins.
+
+                ActiveX controls are no longer supported in any browsers.
+
+                The support for Shockwave Flash has also been turned off in modern browsers.
+            </p>
+            <div>
+                <h2>Object element</h2>
+                <p>It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages,
+                    but can also be used to include HTML in HTML:</p>
+                <br>
+                <object data="HTML_forms.htm" width="80%" height="600"
+                    style="border: 1px solid black;margin-left: 10%;"></object>
+                <p>It can be used to embed images too.</p>
+                <object data="image/one piece.jpeg" style="width: 200px;height: 300px;"></object>
+            </div>
+            <div>
+                <h2>The embed element</h2>
+                <p>the emebed element is supported in all major browsers.</p>
+                <p>The embed elemed defines an emebeded object within an HTMl document.</p>
+                <p><strong>Note:</strong>that the <embed> element does not have a closing tag. It can not contain
+                    alternative text.</p>
+                <p>It can be used to embed an html in an html document.</p>
+                <embed src="HTML_forms.htm" style="border: 1px solid black;width: 80%;height: 600px;margin-left: 10%;">
+                <p>It can be used to emebed an image file too.</p>
+                <embed src="image/one piece.jpeg">
+                <p>it can be used and audio and video file too.</p>
+                <embed src="video/videoplayback.mp4" controls autoplay muted>
+                <p>But duing it we ca't add controls,autoplay and muted feature and hence not recommended.</p>
+            </div>
+            <div>
+                <h2>Html youtube videos</h2>
+                <p>the easiest way to play videos in html is to use youtube.</p>
+                <p>the proper way of including video in our HTMl page.</p>
+                <ul>
+                    <li>Upload the video to YouTube</li>
+                    <li>Take a note of the video id
+                    </li>
+                    <li>Define an iframe> element in your web page
+                    </li>
+                    <li>
+                        Let the source attribute point to the video url</li>
+                    <li>Use the width and height attributes to specify the dimension of the player</li>
+                    <li>Add any other parameters to the URL (see below)</li>
+                </ul>
+                <br>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?" frameborder="0" style="width: 420px;height: 315px;">this video is not playing.</iframe>
+                <h2>YouTube Autplay+Mute</h2>
+                <p>You can let your video start playing automatically when a user visits the page, by adding autoplay=1 to the YouTube URL. However, automatically starting a video is annoying for your visitors!</p>
+                <p>Add mute=1 after autoplay=1 to let your video start playing automatically (but muted).</p>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" frameborder="0" style="width: 420px;height: 315px;">this video is not playing.</iframe>
+                <h2>YouTube Playlist</h2>
+                <p>A comma separated list of videos to play (in addition to the original URL).</p>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&playlist=tgbNymZ7vqY&loop=1" frameborder="0" style="width: 420px;height: 315px;">this video is not playing.</iframe>
+                <h2>Youtube controls</h2>
+                <p>It is used to add or remove controls from a youtube video.</p>
+                <p>Eample of removing control from a youtube video.</p>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&playlist=tgbNymZ7vqY&loop=1&controls=0" frameborder="0" style="width: 420px;height: 315px;">this video is not playing.</iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

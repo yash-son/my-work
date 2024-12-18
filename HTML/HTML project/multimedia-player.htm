@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia player</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.759);
+        }
+        .cl1{
+            color: rgba(255, 255, 255, 0.746);
+            text-align: left;
+            padding-left: 5%;
+            text-shadow: 1px 0.5px;
+        }
+        .cl1 #sp1{
+            color: rgb(214, 185, 185);
+            font-size: 7vw;
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .cl1 #sp3{
+            color: rgb(178, 197, 167);
+            font-size: 6vw;
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .cl2 h2{
+            padding-left: 5%;
+            color: rgba(169, 170, 180, 0.642);
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .cl2 nav{
+            box-sizing: border-box;
+            padding-left: 5%;
+        }
+        .cl2 nav p a{
+            padding: 5px;
+            margin: 5px;
+            background-color: rgba(0, 0, 0, 0.52);
+        }
+        .cl2 nav a:link{
+            color: rgba(255, 255, 255, 0.779);
+            text-decoration: none;
+        }
+        .cl2 nav a:visited{
+            color: white;
+        }
+        .cl2 nav a:hover{
+            background-color: rgba(115, 111, 111, 0.2);
+            color: rgb(255, 255, 255);
+        }
+        .cl2 nav a:active{
+            color: rgb(165, 146, 182);
+        }
+        .cl2 nav p{
+            display: block;
+            float: left;
+        }
+        .cl3 h2{
+            padding-left: 5%;
+            color: rgba(169, 170, 180, 0.642);
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .cl3 nav{
+            box-sizing: border-box;
+            margin-left: 30px;
+        }       
+        .cl3 nav p a{
+            display: block;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgba(0, 0, 0, 0.52);
+            float: left;
+        }
+        .cl3 nav p a:link{
+            color: rgba(255, 255, 255, 0.779);
+            text-decoration: none;
+        }
+        .cl3 nav p a:visited{
+            color: rgba(255, 255, 255, 0.779);
+        }
+        .cl3 nav p a:hover{
+            background-color: rgba(115, 111, 111, 0.2);
+        }
+        .cl3 nav p a:active{
+            color: rgb(165, 146, 182);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cl1"><span id="sp5"><span id="sp1">M</span><span id="sp2">u</span>ltimedia <span id="sp3">P</span>la<span id="sp4">y</span>er</span></h1>
+    <div class="cl2">
+        <h2>Videos:</h2>
+        <nav>
+            <p><a href="video_project/1.mp4" target="_iframe">Video1</a></p>
+            <p><a href="video_project/2.mp4" target="_iframe">Video2</a></p>
+            <p><a href="video_project/3.mp4" target="_iframe">Video3</a></p>
+            <p><a href="video_project/4.mp4" target="_iframe">Video4</a></p>
+            <p><a href="video_project/5.mp4" target="_iframe">Video5</a></p>
+            <p><a href="video_project/6.mp4" target="_iframe">Video6</a></p>
+        </nav>
+        <br> <br> <br>
+        <iframe src="video.htm" style="width: 80%;height: 400px;margin-left: 5%;border: 2px solid rgba(154, 149, 149, 0.306);" name="_iframe"></iframe>
+        <!-- we can add autoplay muted play using javascript -->
+    </div>
+    <div class="cl3">
+        <h2>Audio:</h2>
+        <nav>
+            <p><a href="audio_project/yuki_no_eki.mp3" target="-audio">Audio1</a></p>
+            <p><a href="audio_project/yuki_no_eki.mp3" target="-audio">Audio2</a></p>
+            <p><a href="audio_project/yuki_no_eki.mp3" target="-audio">Audio3</a></p>
+            <p><a href="audio_project/yuki_no_eki.mp3" target="-audio">Audio4</a></p>
+            <p><a href="audio_project/yuki_no_eki.mp3" target="-audio">Audio5</a></p>
+            <p><a href="audio_project/yuki_no_eki.mp3" target="-audio">Audio6</a></p>
+        </nav>
+        <iframe src="audio.htm" style="width: 80%;height: 80px;margin-left: 5%;margin-top: 20px;border: 2px solid rgba(154, 149, 149, 0.306); " name="-audio">
+    </div>
+</body>
+</html>

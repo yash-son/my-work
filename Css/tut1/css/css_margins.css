@@ -1,0 +1,33 @@
+.cl1 #id1{
+    margin: 20px 10% 20px 10%;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+.cl1 #id2{
+    margin: 20px 10% 20px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+.cl1 #id3{
+    margin: 25px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.cl2 #id4{
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+.cl3 #id5{
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.cl3 #id6{
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 50px;
+    /* we can see that the margin between #id5 and #id6 is of 50 px that is larger of two. */
+}

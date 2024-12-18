@@ -1,0 +1,69 @@
+.cl1 #id1{
+    color: rgba(0, 0, 255, 0.208);
+}
+.cl2 #id2,.cl2 #id3,.cl2 #id4,.cl2 #id5{ border: 1px solid black; padding: 30px;}
+.cl2 #id2{
+    text-align: left;
+}
+.cl2 #id3{
+    text-align: right;
+}
+.cl2 #id4{
+    text-align: center;
+}
+.cl2 #id5{
+    text-align: justify;
+}
+.cl3 .cl4{
+    border: 1px solid black;
+    padding: 10px;
+}
+.cl3 #id6{
+    text-align-last: right;
+}
+.cl3 #id7{
+    text-align-last: center;
+}
+.cl3 #id8{
+    text-align-last: justify;
+}
+.cl5 .cl6{
+    border: 1px solid black;
+    padding: 5px;
+}
+.cl5 #id9{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.cl7 #id10 img{
+    width: 10px;
+    height: 10px;
+    vertical-align:text-top;
+}
+.cl8 #id11{
+    padding: 5px;
+    border: 1px solid black;
+    text-decoration-line: underline overline;
+    /* We acn combine two deocration values to get the overlapping effect */
+}
+.cl9 #id12 span{
+    text-decoration-line: underline;
+    text-decoration-color: rgba(35, 35, 34, 0.495);
+}
+.cl10 #id13{
+    text-decoration-line: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.432);
+    text-decoration-style: dotted;
+}
+.cl11 #id14{
+    text-decoration-line: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.667);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 4px;
+}
+#id15{
+    text-decoration: underline rgba(0, 0, 0, 0.77) dotted 2px;
+}
+#id16 a:link{
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.cl1 p{
+    color: rgb(255, 0, 0);
+}
+.cl2 #id1{
+    color: rgb(193, 83, 83);
+}
+.cl2 #id2{
+    color: rgb(153, 138, 168);
+}
+p.cl1{
+    color: red;
+}
+/* universal selector */
+*{
+    box-sizing: border-box;
+}
+.cl4,#id3{
+    text-align: center;
+    color: burlywood;
+    border: 1px solid rgb(195, 139, 67);
+    padding: 5px;
+}/*Here we have grouped two selectors which needs to styled similarly.*/
+/* In group seector each selector is seperated by a comma */
+

@@ -1,0 +1,22 @@
+.cl1 #id1{
+    padding: 5px;
+    margin: 10px;
+    outline-style: solid;
+    outline-width: 10px;
+    /* css outline works uniforly for all four sides */
+    /* all four sides will have same outline property*/
+    outline-color: rgba(0, 0, 0, 0.173);
+}
+.cl2 #id2{
+    background-color: rgba(255, 228, 196, 0.599);
+    padding: 5px;
+    border: 1px solid rgb(255, 228, 196);
+    margin: 20px;
+    outline: 10px solid rgba(219, 214, 214, 0.223);
+}
+.cl3 #id3{
+    border: 1px solid black;
+    padding: 5px;
+    outline: 1px solid red;
+    outline-offset: 10px;
+}

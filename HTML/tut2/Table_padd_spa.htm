@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Table padding and spacing.</title>
+    <style>
+        .cl1 table,
+        .cl1 td,
+        .cl1 th {
+            border: 1px solid black;
+            border-radius: 3px;
+            color: rgba(255, 255, 255, 0.69);
+        }
+
+        .cl1 table {
+            background-color: rgba(0, 132, 255, 0.269);
+        }
+
+        .cl1 td,
+        .cl1 th {
+            /* padding: 3px 5px; */
+            /* or  */
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .cl1 td,
+        .cl1 th {
+            background-color: rgba(0, 132, 255, 0.54);
+        }
+        .cl2 table{
+            border-spacing: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cl1">
+        <h2>Padding inside cell</h2>
+        <p>Using css padding we can add the padding inside the cell of the html cell</p>
+        <table>
+            <tr>
+                <th>emp_id</th>
+                <th>employee_name</th>
+                <th>employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yash</td>
+                <td>20</td>
+            </tr>
+            <tr id="id1">
+                <td>2</td>
+                <td>shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aditya</td>
+                <td>56</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl1 cl2">
+        <h2>HTML table cell spacing</h2>
+
+        <table>
+            <tr>
+                <th>emp_id</th>
+                <th>employee_name</th>
+                <th>employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yash</td>
+                <td>20</td>
+            </tr>
+            <tr id="id1">
+                <td>2</td>
+                <td>shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aditya</td>
+                <td>56</td>
+            </tr>
+    </div>
+</body>
+
+</html>

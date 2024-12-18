@@ -1,0 +1,66 @@
+#id1{
+    background-color: rgba(0, 0, 255, 0.678);
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#id2{
+    background-color: rgba(255, 0, 0, 0.698);
+    color: white;
+    padding: 10px;
+    margin-top: 0px;
+}
+.cl1 h2{
+    font-weight: normal;
+    color: rgba(255, 0, 0, 0.849);
+}
+.cl1 #id3{
+    color: rgba(0, 0, 255, 0.472);
+}
+.cl1 #id4{
+    color: rgba(54, 167, 54, 0.557);
+}
+.cl2 p{
+    border: 2px solid rgba(0, 0, 0, 0.549);
+    padding: 5px;
+}
+.cl3 #id5{
+    color: rgb(255,0,0);
+}
+.cl3 #id6{
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+}
+.cl3 #id7{
+    color: rgb(100,100,100);
+}
+.cl4 #id8{
+    color: rgba(255,0,0,0.5);
+}
+.cl5 #id9{
+    color: #ff0000;
+}
+.cl5 #id10{
+    color: #000000;
+}
+.cl5 #id11{
+    background-color: #ffffff;
+    color: #000000;
+}
+.cl5 #id12{
+    color: #aaaaaa;
+}
+.cl5 #id13{
+    color: #f00;
+}
+.cl6 #id14{
+    color: hsl(0,100%,50%);
+}
+.cl6 #id15{
+    color: hsl(0,0%,50%);
+}
+.cl6 #id16{
+    color: hsl(0,10%,60%);
+}

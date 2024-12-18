@@ -1,0 +1,39 @@
+.cl1 #id1{
+    border-style: solid;
+    border-width: 5px 10px; /* top, bottom for 5 px and left,right for 10px*/
+    border-color: rgba(0, 0, 0, 0.409);
+}
+/* or */
+.cl1 #id2{
+    border-style: solid;
+    border-width: 5px 10px 5px 10px;
+    border-color: rgba(0, 0, 0, 0.738);
+    /* top,right,bottom and left */
+}
+.cl2 #id3{
+    border-style: solid;
+    border-width: 1px 2px 3px 4px;
+    border-color: black rgba(0, 0, 0, 0.903) rgba(0, 0, 0, 0.77) rgba(0, 0, 0, 0.4);
+}
+.cl3 #id4{
+    background-color: rgb(0, 255, 255);
+    padding: 5px;
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-left-color: rgb(69, 218, 215);
+}
+.cl4 #id5{
+    border: 2px solid rgba(0, 0, 0, 0.32);
+    padding: 5px;
+}
+.cl4 #id6{
+    border-top: 2px solid black;
+    border-right: 3px solid rgba(0, 0, 0, 0.875);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.63);
+    border-left: 5px solid rgba(0, 0, 0, 0.276);
+}
+.cl5 #id7{
+    border: 3px solid rgba(0, 0, 0, 0.523);
+    padding: 5px;
+    border-radius: 5px;
+}

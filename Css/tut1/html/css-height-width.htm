@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Css height,width and max-width property
+    </title>
+    <link rel="stylesheet" href="../css/css-height-width.css">
+</head>
+
+<body>
+    <div class="cl1">
+        <h2>CSS height ,width and max-width</h2>
+        <p>CSS height and weight property is used to set the height and width of the element.</p>
+        <p>The height and width properties do not include padding, borders, or margins. It sets the height/width of the
+            area inside the padding, border, and margin of the element.unless we are using border-box.</p>
+        <p>The max-width property is used to set the maximum width of the element.</p>
+        <div>
+            <h2>Css setting height and width</h2>
+            <p>The heigt and wdth property ae used to set the height and width of the element.</p>
+            <p>The height and width property may have the following values:</p>
+            <ul style="list-style-type: circle;">
+                <li><strong>auto: </strong>This is default. The browser calculates the height and width</li>
+                <li><strong>length: </strong>Defines the height/width in px, cm, etc.</li>
+                <li><strong>%: </strong>Defines the height/width in percent of the containing block</li>
+                <li><strong>initial: </strong>Sets the height/width to its default value</li>
+                <li><strong>inherit: </strong>The height/width will be inherited from its parent value</li>
+            </ul>
+            <p>Example:</p>
+            <p id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatem id itaque voluptatum suscipit veritatis ipsum ducimus repellat quas autem.</p>
+            <p><strong>Note: </strong>Remember that the height and width properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!</p>
+        </div>
+        <div>
+            <h2>Setting max-width</h2>
+            <p>It is used to set the max-width of the element.</p>
+            <p>The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p>
+            <p>The problem with width happens when width of screen is smaller than that of element,the browser will add horizontal scrollbar in that case.</p>
+            <p>Using max-width instead, in this situation, will improve the browser's handling of small windows.</p>
+            <p><strong>Note: </strong>If you for some reason use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property will be used (and the width property will be ignored).</p>
+            <p id="id2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, libero. Ut, nemo laborum. Ab, magni voluptatem commodi quaerat nulla minima.</p>
+        </div>
+        <div>
+            <h2>min-height/min-width property</h2>
+            <p>It is used to set the min-height or min-width of the element.</p>
+        </div>
+    </div>
+</body>
+
+</html>

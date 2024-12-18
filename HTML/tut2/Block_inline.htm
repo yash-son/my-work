@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and block elements</title>
+    <style>
+        .cl1 span {
+            background-color: rgba(255, 228, 196, 0.359);
+            10px 20x
+        }
+
+        .cl2 div {
+            background-color: rgba(255, 192, 203, 0.306);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cl3 #div1 {
+            background-color: rgba(238, 130, 238, 0.32);
+        }
+
+        .cl3 #div2 {
+            background-color: rgba(0, 128, 0, 0.186);
+        }
+
+        .cl3 #div3 {
+            background-color: rgba(0, 0, 255, 0.13);
+        }
+
+        .cl3 #div4 {
+            width: 100%;
+            overflow: auto;
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .cl3 #div4 div {
+            width: 33%;
+            float: left;
+            height: 400px;
+        }
+
+        .cl4 #div5 {
+            background-color: rgba(0, 128, 0, 0.186);
+        }
+
+        .cl4 #div6 {
+            background-color: rgba(0, 0, 255, 0.13);
+        }
+
+        .cl4 #div7 {
+            background-color: rgba(165, 42, 42, 0.252);
+        }
+
+        div.cl4 div {
+            display: inline-block;
+            width: 33%;
+        }
+
+        .cl4 {
+            width: 100%;
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .cl5 {
+            display: flex;
+            width: 100%;
+        }
+        .cl5 div{
+            width: 33%;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .cl5 #div8{
+            background-color: rgba(0, 128, 0, 0.186);
+        }
+        .cl5 #div9{
+            background-color: rgba(0, 0, 255, 0.13);
+        }
+        .cl5 #div10{
+            background-color: rgba(165, 42, 42, 0.252);
+        }
+        .cl6 {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .cl6 div{
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .cl6 #div11{
+            background-color: rgba(0, 128, 0, 0.186);
+        }
+        .cl6 #div12{
+            background-color: rgba(0, 0, 255, 0.13);
+        }
+        .cl6 #div13{
+            background-color: rgba(165, 42, 42, 0.252);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>HTML block and inline elements</h1>
+        <p>HTML has two type of elements : <br>
+            1: Inline <br>
+            2:Block </p>
+        <div>
+            <h2>HTML block elements</h2>
+            <p>A block-level element always starts on a new line, and the browsers automatically add some space (a
+                margin) before and after the element.</p>
+            <p>A block-level element always starts on a new line, and the browsers automatically add some space (a
+                margin) before and after the element.</p>
+            <p>Two commonly used block elements are p and div.</p>
+            <p>HELLO WORLD!</p>
+            <div>HELLO WORLD!</div>
+            <!-- Div doen't have default top and bottom margins.-->
+        </div>
+        <div>
+            <h2>Inline element</h2>
+            <p>Inline element doesnt starts from a new line and only takes as much width as necessary.</p>
+            <p>span tag is a example of a iline elemet.</p>
+        </div>
+        <div>
+            <h2>The div element</h2>
+            <p>Div element is used as a container for other block elements like p .</p>
+            <p>Example:</p>
+            <div>
+                <h2>London</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium alias eos
+                    necessitatibus. Ullam, aut. Quam alias quidem rerum praesentium temporibus omnis nostrum,
+                    exercitationem eius sunt optio, tenetur esse quasi facilis, amet vitae totam aperiam distinctio
+                    voluptate enim! Perspiciatis architecto eligendi similique soluta? Earum reprehenderit labore culpa
+                    explicabo, ullam odit assumenda fuga facere. Velit asperiores error libero ad, laudantium quibusdam,
+                    veritatis et est, minus repudiandae cum mollitia nesciunt id enim illum aspernatur soluta
+                    perferendis sapiente optio? Accusantium enim, quod labore obcaecati sit, animi adipisci odio sequi
+                    praesentium vel veritatis. Possimus deleniti, illum perferendis quo voluptatem accusamus at minima
+                    fugiat voluptate!</p>
+            </div>
+        </div>
+        <div class="cl1">
+            <h2>Span element</h2>
+            <p>Span is a inline container to mark a part of the text.</p>
+            <p><span>Lorem</span> ipsums dolor sit amet consectetur adipisicing elit. Vel, distinctio.</p>
+            <p>Span has no required attribute butstyle,id and class are common.</p>
+        </div>
+        <div class="cl2">
+            <h2>center aligning a div element.</h2>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi eaque quas molestiae
+                recusandae architecto vitae inventore, alias eum qui, repudiandae eveniet assumenda? Nulla laborum non
+                ut, iusto officia quaerat tenetur laboriosam, eaque asperiores odit error cum. Earum aspernatur
+                assumenda mollitia sit itaque eaque dignissimos labore pariatur beatae debitis illo quibusdam explicabo
+                molestiae repellendus architecto, aut provident iure quaerat eos sapiente sint maxime? Perspiciatis
+                tempora non quod, aliquam assumenda eius illum similique repellendus ducimus magni explicabo consectetur
+                atque voluptates nam commodi blanditiis facilis ea voluptate minus rem ipsa temporibus neque ullam
+                aperiam! Eum, architecto. Adipisci delectus mollitia consequatur perferendis quae fugiat temporibus
+                porro! Vero facilis ipsa corrupti iusto repudiandae eaque obcaecati repellat consequatur debitis, optio
+                quibusdam voluptatum illum accusantium, nulla minima reiciendis mollitia dicta itaque facere ducimus. Ex
+                aliquam a neque in totam cupiditate quod qui dolorum pariatur aut ullam eveniet ad sed rem, nam
+                blanditiis quisquam vero aperiam consequatur accusamus animi veniam officia odio debitis. Officiis
+                nesciunt quod laborum quibusdam provident animi sequi iusto, maiores fugiat, unde, corrupti recusandae
+                quo dolores repudiandae blanditiis minus enim tempora atque odio? Eos dolorem nulla rerum quas nisi ad
+                dignissimos modi expedita ullam est temporibus, architecto, explicabo, doloremque maxime sapiente natus
+                suscipit doloribus.</div>
+        </div>
+        <div class="cl3">
+            <h2>Aligning multiple div elements side by side.</h2>
+            <div id="div4">
+                <div id="div1">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus quaerat voluptatum alias
+                    exercitationem. Ab ipsam eligendi voluptas ratione earum, impedit repellat mollitia explicabo? Quo
+                    distinctio possimus facere magnam beatae.
+                </div>
+                <div id="div2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam architecto dolorum aliquam
+                    repudiandae voluptates rerum laudantium reprehenderit voluptas vel autem quos nemo velit ipsam
+                    repellendus aspernatur ducimus, quis asperiores quia facere omnis? Eveniet, perspiciatis. Neque
+                    repudiandae beatae deleniti nostrum consequuntur!
+                </div>
+                <div id="div3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis illum aperiam quas repellendus illo
+                    labore corrupti a, earum voluptatibus sequi rerum dolorum eligendi eum molestiae? Itaque natus
+                    voluptatum repellat repudiandae?
+                </div>
+            </div>
+        </div>
+        <div class="cl4">
+            <h2>
+                display:inline-block;
+            </h2>
+            <p>the div will not start from nextline,not add line break but still be can set its height ,width,margin
+                ,padding etc.</p>
+            <div id="div5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur blanditiis
+                obcaecati at quod vitae facilis perspiciatis hic soluta dolore!</div>
+            <div id="div6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto delectus illum beatae id
+                cupiditate culpa doloremque repudiandae temporibus dolore quod?</div>
+            <div id="div7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in quaerat sunt cumque
+                molestias molestiae minus, illum placeat doloremque? Itaque!</div>
+        </div>
+        <div >
+            <h2>flex</h2>
+            <p>Ww can make the div elements appear horizonatlly by using the flex diplay property too.</p>
+            <div class="cl5">
+                <div id="div8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur blanditiis
+                    obcaecati at quod vitae facilis perspiciatis hic soluta dolore!</div>
+                <div id="div9">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto delectus illum
+                    beatae id
+                    cupiditate culpa doloremque repudiandae temporibus dolore quod?</div>
+                <div id="div10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in quaerat sunt cumque
+                    molestias molestiae minus, illum placeat doloremque? Itaque!</div>
+            </div>
+        </div>
+        <div>
+            <h2>CSS grid</h2>
+            <p>We can also css grid property to make divs appear horizontaly.</p>
+            <div class="cl6">
+                <div id="div11">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur blanditiis
+                    obcaecati at quod vitae facilis perspiciatis hic soluta dolore!</div>
+                <div id="div12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto delectus illum
+                    beatae id
+                    cupiditate culpa doloremque repudiandae temporibus dolore quod?</div>
+                <div id="div13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in quaerat sunt cumque
+                    molestias molestiae minus, illum placeat doloremque? Itaque!</div>
+        </div>
+    </div>
+</body>
+
+</html>

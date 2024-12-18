@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html images</title>
+</head>
+
+<body>
+    <div>
+        <h2>img tag</h2>
+        <p>img tag is used to link the images to the webpages. <br>
+            img tag is empty.</p>
+        <p>img tag has two required attributes: <br>
+            1:src <br>
+            2:alt</p>
+    </div>
+    <div>
+        <h2>src attribute</h2>
+        <p>src attribute is used to specify the arc of the image.It can be either absolute path or relative path. <br>
+            Image path must not change with respective to te webpage outherwise the browser will show the broken image
+            icon and alt text.</p>
+        <img src="wallpaperflare.com_wallpaper.jpg" alt="wallpaper_pc">
+    </div>
+    <div>
+        <h2>alt attribute</h2>
+        <p>alt attribute provides the alternate text for the image in caseit is not displayed. <br>
+            alt attribute should describe the iamge.</p>
+        <img href="img_chania.jpg" alt="flowers of chania">
+    </div>
+    <div>
+        <h2>Height and width using the style attribute</h2>
+        <p>using style attribute we can set the width and height of the image.</p>
+        <img src="wallpaperflare.com_wallpaper.jpg" alt="wallpaper_pc" style="height:300px;width: 600px;">
+    </div>
+    <div>
+        <h2> usi the height and width attributes.</h2>
+        <p>alernatively,we can use the height and width attribute to set the height and width of the image.</p>
+        <p>though,height and width attributes also identifies the length in pixels we don not need to specify it.</p>
+        <img src="wallpaperflare.com_wallpaper.jpg" alt="wallpaper_pc" width="600" height="300">
+        <!-- its better to setit using the style attribute. -->
+    </div>
+    <div>
+        <h2>for image in another sub folder</h2>
+        <img src="/image/one piece.jpeg" alt="One Piece">
+    </div>
+    <div>
+        <h2>animated images</h2>
+        <p>HTMl allows gif's.</p>
+        <img src="one piece gif.gif" alt="GIF">
+    </div>
+    <div>
+        <h2>image as a link</h2>
+        <p>We can use a image as a link use img tag inside the anchor tag.</p>
+        <a href="https://hianime.to/watch/one-piece-100?ep=121556&c_id=16050674&c_type=episode&ep=121556" title="One piece anime"><img src="one piece gif.gif" alt="One piece gif"></a>
+    </div>
+    <div>
+        <h2>floating iamges.</h2>
+        <p>use the css float property to float the image to the right ot left of the text.</p>
+        <p><img src="one piece gif.gif" alt="one piece gif" style="float: right;">This will make image float to the right of the text.</p>
+        <p><img src="one piece gif.gif" alt="one piece gif" style="float: left;">this will makeimage float to the left of the text.</p>
+    </div>
+</body>
+
+</html>

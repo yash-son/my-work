@@ -1,0 +1,6 @@
+Name,Roll Number,Physics Marks,Chemistry Marks,Mathematics Marks
+Alice,101,85,78,92
+Bob,102,88,84,90
+Charlie,103,90,82,88
+Daisy,104,80,85,95
+Eve,105,87,90,86

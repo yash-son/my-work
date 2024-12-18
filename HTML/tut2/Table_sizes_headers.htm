@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table sizes.</title>
+    <style>
+        .cl1 table,
+        .cl1 th,
+        .cl1 td {
+            border: 1px solid black;
+        }
+
+        .cl1 table {
+            border-collapse: collapse;
+            width: 100%;
+            /* atking the complete width of the parent element here div with class cl1*/
+        }
+
+        .cl2 table,
+        .cl2 td,
+        .cl2 th {
+            border: 1px solid black;
+
+        }
+
+        .cl2 table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .cl3 {
+            width: 50%;
+        }
+
+        .cl4 table,
+        .cl4 th,
+        .cl4 td {
+            border: 1px solid black;
+        }
+        .cl4 table{
+            height: 300px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #id1{
+            height: 50%;
+        }
+        .cl5 table,.cl5 th,.cl5 td{
+            border: 1px solid black;
+        }
+        .cl5 table{
+            border-collapse:collapse
+        }
+        .cl5 th,.cl5 td{
+            padding: 5px 8px;
+        }
+        .cl6 table,.cl6 th,.cl6 td{
+            border: 1px solid black;
+        }
+        .cl6 table{
+            border-collapse:collapse
+        }
+        .cl6 th,.cl6 td{
+            padding: 5px 8px;
+        }
+        .cl6 th{
+            text-align: left;
+            font-style: italic;
+        }
+        .cl7 table,.cl7 th,.cl7 td{
+            border: 1px solid black;
+        }
+        .cl7 table{
+            border-collapse: collapse;
+            width: 70%;
+            height: 200px;
+        }
+        .cl7 td{
+            padding-left: 5px;
+        }
+        .cl7 #id1{
+            font-size: 40px;
+            font-style: oblique;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Html table can have differnet sizes for different coloumns ,rows or entire table.</h2>
+        <p>Using style width and height property we can set the height and widthe of table,rows or coloumns.</p>
+    </div>
+    <div>
+        <h2>
+            HTML table width:100%;
+        </h2>
+        <div class="cl1">
+            <table>
+                <tr>
+                    <th>emp_id</th>
+                    <th>employee_name</th>
+                    <th>employee_age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>yash</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>shubh</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Aditya</td>
+                    <td>56</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="cl2">
+        <h2>HTML table coloumn width.</h2>
+        <p>to set the html coloumn use the css width property with td and th elements.</p>
+        <!-- setting the size od the second coloumn to 50% of the parent element. -->
+        <table>
+            <tr>
+                <th>emp_id</th>
+                <th class="cl3">employee_name</th>
+                <th>employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="cl3">yash</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="cl3">shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="cl3">Aditya</td>
+                <td>56</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl4">
+        <h2>HTML table row height.</h2>
+        <p>We can set the height of the row by using the css height property with particular row</p>
+        <table>
+            <tr>
+                <th>emp_id</th>
+                <th">employee_name</th>
+                <th>employee_age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>yash</td>
+                <td>20</td>
+            </tr>
+            <tr id="id1">
+                <td>2</td>
+                <td >shubh</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td >Aditya</td>
+                <td>56</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>HTML table headers</h2>
+        <p>html table headers can be used with any tr,tc and td.</p>
+        <p>HTML table headers is denoted by th element with each th element repesenting a cell.</p>
+    </div>
+    <div>
+        <h2>Horizotal table headers.</h2>
+        <table>
+            <tr>
+                <th>employee-name</th>
+                <th>age</th>
+                <th>city</th>
+            </tr>
+            <tr>
+                <td>yash</td>
+                <td>20</td>
+                <td>gadarwara</td>
+            </tr>
+            <tr>
+                <td>Shubh</td>
+                <td>19</td>
+                <td>gadarwara</td>
+            </tr>
+            <tr>
+                <td>prostil</td>
+                <td>20</td>
+                <td>Gadarwara</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl5">
+        <h2>vertical table headers</h2>
+        <table>
+            <tr>
+                <th>Monday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl6">
+        <h2>align table hearders</h2>
+        <p>by-default the table headers are bold and center align.but we can change this uisng the text-align property with th elements.</p>
+        <table>
+            <tr>
+                <th>Monday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>python</td>
+                <td>daa</td>
+                <td>probability</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl7">
+        <h2>Header spaned over multiple coloumns.</h2>
+        <p>By using the colspan prroperty we can span the header or table data over mre than one coloumn.</p>
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Yash</td>
+                <td>soni</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Muskan</td>
+                <td>Soni</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Anmol</td>
+                <td>Soni</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Jayati</td>
+                <td>Soni</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <div class="cl7">
+        <h2>table caption:</h2>
+        <p>using table caption atg we can set the caption for the image which acts as a heading for the table.</p>
+        <table>
+            <caption id="id1">name and age</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Yash</td>
+                <td>soni</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Muskan</td>
+                <td>Soni</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Anmol</td>
+                <td>Soni</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Jayati</td>
+                <td>Soni</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <p>Note: The caption tag should be inserted immediately after the table tag.</p>
+    </div>
+</body>
+
+</html>
